@@ -1,0 +1,77 @@
+{
+  "best_model": "hist_gradient_boosting",
+  "imbalance": {
+    "default_pct": 0.19980728418313493,
+    "non_default_pct": 0.8001927158168651,
+    "imbalance_ratio": 4.004822542322542,
+    "n_loans": 1348099
+  },
+  "comparison": [
+    {
+      "threshold": 0.5,
+      "roc_auc": 0.719681863503301,
+      "pr_auc": 0.38657156286121064,
+      "brier": 0.21410389594003382,
+      "precision": 0.3204818217786961,
+      "recall": 0.6766038016038016,
+      "f1": 0.4349460344735005,
+      "false_positive_rate": 0.3582188479151603,
+      "true_negatives": 138463,
+      "false_positives": 77285,
+      "false_negatives": 17422,
+      "true_positives": 36450,
+      "expected_cost": 164395.0,
+      "model": "hist_gradient_boosting"
+    },
+    {
+      "threshold": 0.5,
+      "roc_auc": 0.7104817170284174,
+      "pr_auc": 0.37426802229635514,
+      "brier": 0.21079877918655043,
+      "precision": 0.31873041396763907,
+      "recall": 0.6475720225720226,
+      "f1": 0.4271973059849992,
+      "false_positive_rate": 0.34562081687895135,
+      "true_negatives": 141181,
+      "false_positives": 74567,
+      "false_negatives": 18986,
+      "true_positives": 34886,
+      "expected_cost": 169497.0,
+      "model": "random_forest"
+    },
+    {
+      "threshold": 0.5,
+      "roc_auc": 0.7083945138107286,
+      "pr_auc": 0.36913538906899085,
+      "brier": 0.2181611374429392,
+      "precision": 0.31251406707179835,
+      "recall": 0.6701254826254827,
+      "f1": 0.4262471220260936,
+      "false_positive_rate": 0.3681007471679923,
+      "true_negatives": 136331,
+      "false_positives": 79417,
+      "false_negatives": 17771,
+      "true_positives": 36101,
+      "expected_cost": 168272.0,
+      "model": "logistic_regression"
+    }
+  ],
+  "selected_threshold": {
+    "threshold": 0.45,
+    "roc_auc": 0.719681863503301,
+    "pr_auc": 0.38657156286121064,
+    "brier": 0.21410389594003382,
+    "precision": 0.296350291211686,
+    "recall": 0.7622141372141372,
+    "f1": 0.42677115433583984,
+    "false_positive_rate": 0.45190221925579843,
+    "true_negatives": 118251.0,
+    "false_positives": 97497.0,
+    "false_negatives": 12810.0,
+    "true_positives": 41062.0,
+    "expected_cost": 161547.0,
+    "selection_rule": "Threshold minimises expected cost using FP cost=1.0 and FN cost=5.0."
+  },
+  "test_size": 269620,
+  "selection_objective": "Rank higher-risk loans with acceptable false-positive cost and reasonably calibrated probabilities. PR-AUC is the primary comparison metric because the default class is the minority outcome."
+}

@@ -1,0 +1,2346 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='431bf86c0dcbc77adae5d740f358219166ab9d021984969738ae9ae950169921' _.fcp.WorkbookFingerprinting.true...creator-author-id='431bf86c0dcbc77adae5d740f358219166ab9d021984969738ae9ae950169921' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='045cb906daaec90541c823456ee5a8b4cd50dbde241484ed96dde19fbc382e86' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='045cb906daaec90541c823456ee5a8b4cd50dbde241484ed96dde19fbc382e86' locale='en_US' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='smooth' />
+  <style>
+    <style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Concentration by Grade' inline='true' name='federated.concentration_by_grade_6f2efb4c' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection name='textscan.tableau_concentration_by_grade_csv_34a7ac70'>
+            <connection auto-extract='yes' character-set='UTF-8' class='textscan' directory='/Users/dhirajguha/Data Science project Profolio/Credit Risk &amp; Loan Default Analysis/data/processed/tableau' driver='' filename='tableau_concentration_by_grade.csv' force-character-set='no' force-header='no' force-separator='no' header='yes' separator=',' text-qualifier='&quot;' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.tableau_concentration_by_grade_csv_34a7ac70' name='tableau_concentration_by_grade#csv' table='[tableau_concentration_by_grade#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='grade' ordinal='0' />
+            <column datatype='integer' name='loan_count' ordinal='1' />
+            <column datatype='integer' name='default_count' ordinal='2' />
+            <column datatype='real' name='default_rate' ordinal='3' />
+            <column datatype='real' name='default_rate_ci_low' ordinal='4' />
+            <column datatype='real' name='default_rate_ci_high' ordinal='5' />
+            <column datatype='real' name='charged_off_rate' ordinal='6' />
+            <column datatype='real' name='funded_amount' ordinal='7' />
+            <column datatype='real' name='average_loan_amount' ordinal='8' />
+            <column datatype='real' name='average_interest_rate' ordinal='9' />
+            <column datatype='real' name='average_dti' ordinal='10' />
+            <column datatype='boolean' name='meets_sample_threshold' ordinal='11' />
+            <column datatype='real' name='exposure_share' ordinal='12' />
+            <column datatype='real' name='default_share' ordinal='13' />
+            <column datatype='boolean' name='high_risk' ordinal='14' />
+            <column datatype='boolean' name='high_exposure' ordinal='15' />
+            <column datatype='string' name='concentration_quadrant' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loan_count]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>loan_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>default_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[default_count]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>default_count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>default_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[default_rate]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>default_rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>default_rate_ci_low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[default_rate_ci_low]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>default_rate_ci_low</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>default_rate_ci_high</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[default_rate_ci_high]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>default_rate_ci_high</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charged_off_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[charged_off_rate]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>charged_off_rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>funded_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[funded_amount]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>funded_amount</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_loan_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_loan_amount]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>average_loan_amount</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_interest_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_interest_rate]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>average_interest_rate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_dti</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_dti]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>average_dti</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meets_sample_threshold</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[meets_sample_threshold]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>meets_sample_threshold</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>exposure_share</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[exposure_share]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>exposure_share</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>default_share</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[default_share]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>default_share</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>high_risk</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[high_risk]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>high_risk</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>high_exposure</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[high_exposure]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>high_exposure</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>concentration_quadrant</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[concentration_quadrant]</local-name>
+            <parent-name>[tableau_concentration_by_grade#csv]</parent-name>
+            <remote-alias>concentration_quadrant</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <column caption='Average Dti' datatype='real' name='[average_dti]' role='measure' type='quantitative' />
+      <column caption='Average Interest Rate' datatype='real' name='[average_interest_rate]' role='measure' type='quantitative' />
+      <column caption='Average Loan Amount' datatype='real' name='[average_loan_amount]' role='measure' type='quantitative' />
+      <column caption='Charged Off Rate' datatype='real' name='[charged_off_rate]' role='measure' type='quantitative' />
+      <column caption='Concentration Quadrant' datatype='string' name='[concentration_quadrant]' role='dimension' type='nominal' />
+      <column caption='Default Count' datatype='integer' name='[default_count]' role='measure' type='quantitative' />
+      <column caption='Default Rate' datatype='real' name='[default_rate]' role='measure' type='quantitative' />
+      <column caption='Default Rate Ci High' datatype='real' name='[default_rate_ci_high]' role='measure' type='quantitative' />
+      <column caption='Default Rate Ci Low' datatype='real' name='[default_rate_ci_low]' role='measure' type='quantitative' />
+      <column caption='Default Share' datatype='real' name='[default_share]' role='measure' type='quantitative' />
+      <column caption='Exposure Share' datatype='real' name='[exposure_share]' role='measure' type='quantitative' />
+      <column caption='Funded Amount' datatype='real' name='[funded_amount]' role='measure' type='quantitative' />
+      <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+      <column caption='High Exposure' datatype='boolean' name='[high_exposure]' role='dimension' type='nominal' />
+      <column caption='High Risk' datatype='boolean' name='[high_risk]' role='dimension' type='nominal' />
+      <column caption='Loan Count' datatype='integer' name='[loan_count]' role='measure' type='quantitative' />
+      <column caption='Meets Sample Threshold' datatype='boolean' name='[meets_sample_threshold]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='textscan.tableau_concentration_by_grade_csv_34a7ac70' name='tableau_concentration_by_grade#csv' table='[tableau_concentration_by_grade#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+                  <column datatype='string' name='grade' ordinal='0' />
+                  <column datatype='integer' name='loan_count' ordinal='1' />
+                  <column datatype='integer' name='default_count' ordinal='2' />
+                  <column datatype='real' name='default_rate' ordinal='3' />
+                  <column datatype='real' name='default_rate_ci_low' ordinal='4' />
+                  <column datatype='real' name='default_rate_ci_high' ordinal='5' />
+                  <column datatype='real' name='charged_off_rate' ordinal='6' />
+                  <column datatype='real' name='funded_amount' ordinal='7' />
+                  <column datatype='real' name='average_loan_amount' ordinal='8' />
+                  <column datatype='real' name='average_interest_rate' ordinal='9' />
+                  <column datatype='real' name='average_dti' ordinal='10' />
+                  <column datatype='boolean' name='meets_sample_threshold' ordinal='11' />
+                  <column datatype='real' name='exposure_share' ordinal='12' />
+                  <column datatype='real' name='default_share' ordinal='13' />
+                  <column datatype='boolean' name='high_risk' ordinal='14' />
+                  <column datatype='boolean' name='high_exposure' ordinal='15' />
+                  <column datatype='string' name='concentration_quadrant' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Expected Loss by Grade' inline='true' name='federated.expected_loss_by_grade_0a101809' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection name='textscan.tableau_el_by_grade_csv_a5629613'>
+            <connection auto-extract='yes' character-set='UTF-8' class='textscan' directory='/Users/dhirajguha/Data Science project Profolio/Credit Risk &amp; Loan Default Analysis/data/processed/tableau' driver='' filename='tableau_el_by_grade.csv' force-character-set='no' force-header='no' force-separator='no' header='yes' separator=',' text-qualifier='&quot;' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.tableau_el_by_grade_csv_a5629613' name='tableau_el_by_grade#csv' table='[tableau_el_by_grade#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='grade' ordinal='0' />
+            <column datatype='integer' name='loan_count' ordinal='1' />
+            <column datatype='real' name='pd' ordinal='2' />
+            <column datatype='real' name='lgd_assumption' ordinal='3' />
+            <column datatype='real' name='ead' ordinal='4' />
+            <column datatype='real' name='expected_loss' ordinal='5' />
+            <column datatype='real' name='expected_loss_pct' ordinal='6' />
+            <column datatype='real' name='average_loan_amount' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_el_by_grade#csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[tableau_el_by_grade#csv]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loan_count]</local-name>
+            <parent-name>[tableau_el_by_grade#csv]</parent-name>
+            <remote-alias>loan_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pd]</local-name>
+            <parent-name>[tableau_el_by_grade#csv]</parent-name>
+            <remote-alias>pd</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lgd_assumption</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lgd_assumption]</local-name>
+            <parent-name>[tableau_el_by_grade#csv]</parent-name>
+            <remote-alias>lgd_assumption</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ead</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ead]</local-name>
+            <parent-name>[tableau_el_by_grade#csv]</parent-name>
+            <remote-alias>ead</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expected_loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expected_loss]</local-name>
+            <parent-name>[tableau_el_by_grade#csv]</parent-name>
+            <remote-alias>expected_loss</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expected_loss_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expected_loss_pct]</local-name>
+            <parent-name>[tableau_el_by_grade#csv]</parent-name>
+            <remote-alias>expected_loss_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_loan_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_loan_amount]</local-name>
+            <parent-name>[tableau_el_by_grade#csv]</parent-name>
+            <remote-alias>average_loan_amount</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <column caption='Average Loan Amount' datatype='real' name='[average_loan_amount]' role='measure' type='quantitative' />
+      <column caption='Ead' datatype='real' name='[ead]' role='measure' type='quantitative' />
+      <column caption='Expected Loss' datatype='real' name='[expected_loss]' role='measure' type='quantitative' />
+      <column caption='Expected Loss Pct' datatype='real' name='[expected_loss_pct]' role='measure' type='quantitative' />
+      <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+      <column caption='Lgd Assumption' datatype='real' name='[lgd_assumption]' role='measure' type='quantitative' />
+      <column caption='Loan Count' datatype='integer' name='[loan_count]' role='measure' type='quantitative' />
+      <column caption='Pd' datatype='real' name='[pd]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='textscan.tableau_el_by_grade_csv_a5629613' name='tableau_el_by_grade#csv' table='[tableau_el_by_grade#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+                  <column datatype='string' name='grade' ordinal='0' />
+                  <column datatype='integer' name='loan_count' ordinal='1' />
+                  <column datatype='real' name='pd' ordinal='2' />
+                  <column datatype='real' name='lgd_assumption' ordinal='3' />
+                  <column datatype='real' name='ead' ordinal='4' />
+                  <column datatype='real' name='expected_loss' ordinal='5' />
+                  <column datatype='real' name='expected_loss_pct' ordinal='6' />
+                  <column datatype='real' name='average_loan_amount' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Expected Loss by State' inline='true' name='federated.expected_loss_by_state_ab2a0be2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection name='textscan.tableau_el_by_state_csv_cc796ff2'>
+            <connection auto-extract='yes' character-set='UTF-8' class='textscan' directory='/Users/dhirajguha/Data Science project Profolio/Credit Risk &amp; Loan Default Analysis/data/processed/tableau' driver='' filename='tableau_el_by_state.csv' force-character-set='no' force-header='no' force-separator='no' header='yes' separator=',' text-qualifier='&quot;' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.tableau_el_by_state_csv_cc796ff2' name='tableau_el_by_state#csv' table='[tableau_el_by_state#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='addr_state' ordinal='0' />
+            <column datatype='integer' name='loan_count' ordinal='1' />
+            <column datatype='real' name='pd' ordinal='2' />
+            <column datatype='real' name='lgd_assumption' ordinal='3' />
+            <column datatype='real' name='ead' ordinal='4' />
+            <column datatype='real' name='expected_loss' ordinal='5' />
+            <column datatype='real' name='expected_loss_pct' ordinal='6' />
+            <column datatype='real' name='average_loan_amount' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_el_by_state#csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>addr_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[addr_state]</local-name>
+            <parent-name>[tableau_el_by_state#csv]</parent-name>
+            <remote-alias>addr_state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loan_count]</local-name>
+            <parent-name>[tableau_el_by_state#csv]</parent-name>
+            <remote-alias>loan_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pd]</local-name>
+            <parent-name>[tableau_el_by_state#csv]</parent-name>
+            <remote-alias>pd</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lgd_assumption</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lgd_assumption]</local-name>
+            <parent-name>[tableau_el_by_state#csv]</parent-name>
+            <remote-alias>lgd_assumption</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ead</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ead]</local-name>
+            <parent-name>[tableau_el_by_state#csv]</parent-name>
+            <remote-alias>ead</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expected_loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expected_loss]</local-name>
+            <parent-name>[tableau_el_by_state#csv]</parent-name>
+            <remote-alias>expected_loss</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expected_loss_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expected_loss_pct]</local-name>
+            <parent-name>[tableau_el_by_state#csv]</parent-name>
+            <remote-alias>expected_loss_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_loan_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_loan_amount]</local-name>
+            <parent-name>[tableau_el_by_state#csv]</parent-name>
+            <remote-alias>average_loan_amount</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <column caption='Addr State' datatype='string' name='[addr_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Average Loan Amount' datatype='real' name='[average_loan_amount]' role='measure' type='quantitative' />
+      <column caption='Ead' datatype='real' name='[ead]' role='measure' type='quantitative' />
+      <column caption='Expected Loss' datatype='real' name='[expected_loss]' role='measure' type='quantitative' />
+      <column caption='Expected Loss Pct' datatype='real' name='[expected_loss_pct]' role='measure' type='quantitative' />
+      <column caption='Lgd Assumption' datatype='real' name='[lgd_assumption]' role='measure' type='quantitative' />
+      <column caption='Loan Count' datatype='integer' name='[loan_count]' role='measure' type='quantitative' />
+      <column caption='Pd' datatype='real' name='[pd]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='textscan.tableau_el_by_state_csv_cc796ff2' name='tableau_el_by_state#csv' table='[tableau_el_by_state#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+                  <column datatype='string' name='addr_state' ordinal='0' />
+                  <column datatype='integer' name='loan_count' ordinal='1' />
+                  <column datatype='real' name='pd' ordinal='2' />
+                  <column datatype='real' name='lgd_assumption' ordinal='3' />
+                  <column datatype='real' name='ead' ordinal='4' />
+                  <column datatype='real' name='expected_loss' ordinal='5' />
+                  <column datatype='real' name='expected_loss_pct' ordinal='6' />
+                  <column datatype='real' name='average_loan_amount' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Expected Loss by Vintage' inline='true' name='federated.expected_loss_by_vintage_ed8ad7e6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection name='textscan.tableau_el_by_vintage_csv_52302af5'>
+            <connection auto-extract='yes' character-set='UTF-8' class='textscan' directory='/Users/dhirajguha/Data Science project Profolio/Credit Risk &amp; Loan Default Analysis/data/processed/tableau' driver='' filename='tableau_el_by_vintage.csv' force-character-set='no' force-header='no' force-separator='no' header='yes' separator=',' text-qualifier='&quot;' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.tableau_el_by_vintage_csv_52302af5' name='tableau_el_by_vintage#csv' table='[tableau_el_by_vintage#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='real' name='vintage' ordinal='0' />
+            <column datatype='integer' name='loan_count' ordinal='1' />
+            <column datatype='real' name='pd' ordinal='2' />
+            <column datatype='real' name='lgd_assumption' ordinal='3' />
+            <column datatype='real' name='ead' ordinal='4' />
+            <column datatype='real' name='expected_loss' ordinal='5' />
+            <column datatype='real' name='expected_loss_pct' ordinal='6' />
+            <column datatype='real' name='average_loan_amount' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_el_by_vintage#csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vintage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vintage]</local-name>
+            <parent-name>[tableau_el_by_vintage#csv]</parent-name>
+            <remote-alias>vintage</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loan_count]</local-name>
+            <parent-name>[tableau_el_by_vintage#csv]</parent-name>
+            <remote-alias>loan_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pd]</local-name>
+            <parent-name>[tableau_el_by_vintage#csv]</parent-name>
+            <remote-alias>pd</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lgd_assumption</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lgd_assumption]</local-name>
+            <parent-name>[tableau_el_by_vintage#csv]</parent-name>
+            <remote-alias>lgd_assumption</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ead</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ead]</local-name>
+            <parent-name>[tableau_el_by_vintage#csv]</parent-name>
+            <remote-alias>ead</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expected_loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expected_loss]</local-name>
+            <parent-name>[tableau_el_by_vintage#csv]</parent-name>
+            <remote-alias>expected_loss</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expected_loss_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expected_loss_pct]</local-name>
+            <parent-name>[tableau_el_by_vintage#csv]</parent-name>
+            <remote-alias>expected_loss_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_loan_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_loan_amount]</local-name>
+            <parent-name>[tableau_el_by_vintage#csv]</parent-name>
+            <remote-alias>average_loan_amount</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <column caption='Average Loan Amount' datatype='real' name='[average_loan_amount]' role='measure' type='quantitative' />
+      <column caption='Ead' datatype='real' name='[ead]' role='measure' type='quantitative' />
+      <column caption='Expected Loss' datatype='real' name='[expected_loss]' role='measure' type='quantitative' />
+      <column caption='Expected Loss Pct' datatype='real' name='[expected_loss_pct]' role='measure' type='quantitative' />
+      <column caption='Lgd Assumption' datatype='real' name='[lgd_assumption]' role='measure' type='quantitative' />
+      <column caption='Loan Count' datatype='integer' name='[loan_count]' role='measure' type='quantitative' />
+      <column caption='Pd' datatype='real' name='[pd]' role='measure' type='quantitative' />
+      <column caption='Vintage' datatype='real' name='[vintage]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='textscan.tableau_el_by_vintage_csv_52302af5' name='tableau_el_by_vintage#csv' table='[tableau_el_by_vintage#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+                  <column datatype='real' name='vintage' ordinal='0' />
+                  <column datatype='integer' name='loan_count' ordinal='1' />
+                  <column datatype='real' name='pd' ordinal='2' />
+                  <column datatype='real' name='lgd_assumption' ordinal='3' />
+                  <column datatype='real' name='ead' ordinal='4' />
+                  <column datatype='real' name='expected_loss' ordinal='5' />
+                  <column datatype='real' name='expected_loss_pct' ordinal='6' />
+                  <column datatype='real' name='average_loan_amount' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Risk Segmentation' inline='true' name='federated.risk_segmentation_d773a8ce' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection name='textscan.tableau_risk_segmentation_csv_700f4f42'>
+            <connection auto-extract='yes' character-set='UTF-8' class='textscan' directory='/Users/dhirajguha/Data Science project Profolio/Credit Risk &amp; Loan Default Analysis/data/processed/tableau' driver='' filename='tableau_risk_segmentation.csv' force-character-set='no' force-header='no' force-separator='no' header='yes' separator=',' text-qualifier='&quot;' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.tableau_risk_segmentation_csv_700f4f42' name='tableau_risk_segmentation#csv' table='[tableau_risk_segmentation#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='segment' ordinal='0' />
+            <column datatype='real' name='pd' ordinal='1' />
+            <column datatype='real' name='exposure' ordinal='2' />
+            <column datatype='real' name='expected_loss' ordinal='3' />
+            <column datatype='string' name='risk_level' ordinal='4' />
+            <column datatype='string' name='business_action' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_risk_segmentation#csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[segment]</local-name>
+            <parent-name>[tableau_risk_segmentation#csv]</parent-name>
+            <remote-alias>segment</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pd]</local-name>
+            <parent-name>[tableau_risk_segmentation#csv]</parent-name>
+            <remote-alias>pd</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>exposure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[exposure]</local-name>
+            <parent-name>[tableau_risk_segmentation#csv]</parent-name>
+            <remote-alias>exposure</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expected_loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expected_loss]</local-name>
+            <parent-name>[tableau_risk_segmentation#csv]</parent-name>
+            <remote-alias>expected_loss</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>risk_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[risk_level]</local-name>
+            <parent-name>[tableau_risk_segmentation#csv]</parent-name>
+            <remote-alias>risk_level</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_action</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_action]</local-name>
+            <parent-name>[tableau_risk_segmentation#csv]</parent-name>
+            <remote-alias>business_action</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Migrated Data]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <column caption='Business Action' datatype='string' name='[business_action]' role='dimension' type='nominal' />
+      <column caption='Expected Loss' datatype='real' name='[expected_loss]' role='measure' type='quantitative' />
+      <column caption='Exposure' datatype='real' name='[exposure]' role='measure' type='quantitative' />
+      <column caption='Pd' datatype='real' name='[pd]' role='measure' type='quantitative' />
+      <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+      <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='textscan.tableau_risk_segmentation_csv_700f4f42' name='tableau_risk_segmentation#csv' table='[tableau_risk_segmentation#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+                  <column datatype='string' name='segment' ordinal='0' />
+                  <column datatype='real' name='pd' ordinal='1' />
+                  <column datatype='real' name='exposure' ordinal='2' />
+                  <column datatype='real' name='expected_loss' ordinal='3' />
+                  <column datatype='string' name='risk_level' ordinal='4' />
+                  <column datatype='string' name='business_action' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Expected Loss by Grade'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#1b365d' fontname='Tableau Medium' fontsize='12'>Expected Loss by Grade</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Expected Loss by Grade' name='federated.expected_loss_by_grade_0a101809' />
+          </datasources>
+          <datasource-dependencies datasource='federated.expected_loss_by_grade_0a101809'>
+            <column caption='Expected Loss' datatype='real' name='[expected_loss]' role='measure' type='quantitative' />
+            <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+            <column-instance column='[grade]' derivation='None' name='[none:grade:nk]' pivot='key' type='nominal' />
+            <column-instance column='[expected_loss]' derivation='Sum' name='[sum:expected_loss:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='font-size' value='9' />
+            <format attr='color' value='#5B6B7C' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.expected_loss_by_grade_0a101809].[sum:expected_loss:qk]' value='$#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#5B6B7C' />
+            <format attr='font-family' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='mark'>
+            <format attr='mark-color' value='#2F5D8A' />
+            <format attr='mark-labels-cull' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='11' />
+            <format attr='font-family' value='Tableau Book' />
+            <format attr='color' value='#1C2430' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.expected_loss_by_grade_0a101809].[none:grade:nk]</rows>
+        <cols>[federated.expected_loss_by_grade_0a101809].[sum:expected_loss:qk]</cols>
+      </table>
+      <simple-id uuid='{960B7B70-2075-429F-873C-8ED4A3A3893B}' />
+    </worksheet>
+    <worksheet name='Expected Loss by State'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#1b365d' fontname='Tableau Medium' fontsize='12'>Expected Loss by State</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Expected Loss by State' name='federated.expected_loss_by_state_ab2a0be2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.expected_loss_by_state_ab2a0be2'>
+            <column caption='Addr State' datatype='string' name='[addr_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Expected Loss' datatype='real' name='[expected_loss]' role='measure' type='quantitative' />
+            <column-instance column='[addr_state]' derivation='None' name='[none:addr_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[expected_loss]' derivation='Sum' name='[sum:expected_loss:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='font-size' value='9' />
+            <format attr='color' value='#5B6B7C' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.expected_loss_by_state_ab2a0be2].[sum:expected_loss:qk]' value='$#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#5B6B7C' />
+            <format attr='font-family' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='mark'>
+            <format attr='mark-color' value='#2F5D8A' />
+            <format attr='mark-labels-cull' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='11' />
+            <format attr='font-family' value='Tableau Book' />
+            <format attr='color' value='#1C2430' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.expected_loss_by_state_ab2a0be2].[none:addr_state:nk]</rows>
+        <cols>[federated.expected_loss_by_state_ab2a0be2].[sum:expected_loss:qk]</cols>
+      </table>
+      <simple-id uuid='{E7BD5AEF-5347-4D00-84A9-46FF386C7611}' />
+    </worksheet>
+    <worksheet name='Expected Loss by Vintage'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#1b365d' fontname='Tableau Medium' fontsize='12'>Expected Loss by Vintage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Expected Loss by Vintage' name='federated.expected_loss_by_vintage_ed8ad7e6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.expected_loss_by_vintage_ed8ad7e6'>
+            <column caption='Expected Loss' datatype='real' name='[expected_loss]' role='measure' type='quantitative' />
+            <column-instance column='[vintage]' derivation='None' name='[none:vintage:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[expected_loss]' derivation='Sum' name='[sum:expected_loss:qk]' pivot='key' type='quantitative' />
+            <column caption='Vintage' datatype='real' name='[vintage]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='font-size' value='9' />
+            <format attr='color' value='#5B6B7C' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.expected_loss_by_vintage_ed8ad7e6].[sum:expected_loss:qk]' value='$#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#5B6B7C' />
+            <format attr='font-family' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='mark'>
+            <format attr='mark-color' value='#2F5D8A' />
+            <format attr='mark-labels-cull' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='11' />
+            <format attr='font-family' value='Tableau Book' />
+            <format attr='color' value='#1C2430' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.expected_loss_by_vintage_ed8ad7e6].[none:vintage:ok]</rows>
+        <cols>[federated.expected_loss_by_vintage_ed8ad7e6].[sum:expected_loss:qk]</cols>
+      </table>
+      <simple-id uuid='{903893DB-0349-4673-BDFC-F62B5801BB85}' />
+    </worksheet>
+    <worksheet name='PD Exposure Matrix'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#1b365d' fontname='Tableau Medium' fontsize='12'>PD Proxy vs Exposure by Grade</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Concentration by Grade' name='federated.concentration_by_grade_6f2efb4c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.concentration_by_grade_6f2efb4c'>
+            <column-instance column='[default_rate]' derivation='Avg' name='[avg:default_rate:qk]' pivot='key' type='quantitative' />
+            <column caption='Concentration Quadrant' datatype='string' name='[concentration_quadrant]' role='dimension' type='nominal' />
+            <column caption='Default Rate' datatype='real' name='[default_rate]' role='measure' type='quantitative' />
+            <column caption='Funded Amount' datatype='real' name='[funded_amount]' role='measure' type='quantitative' />
+            <column-instance column='[concentration_quadrant]' derivation='None' name='[none:concentration_quadrant:nk]' pivot='key' type='nominal' />
+            <column-instance column='[funded_amount]' derivation='Sum' name='[sum:funded_amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='font-size' value='9' />
+            <format attr='color' value='#5B6B7C' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.concentration_by_grade_6f2efb4c].[avg:default_rate:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.concentration_by_grade_6f2efb4c].[sum:funded_amount:qk]' value='$#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#5B6B7C' />
+            <format attr='font-family' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='mark'>
+            <format attr='mark-labels-cull' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='11' />
+            <format attr='font-family' value='Tableau Book' />
+            <format attr='color' value='#1C2430' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.concentration_by_grade_6f2efb4c].[none:concentration_quadrant:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.concentration_by_grade_6f2efb4c].[avg:default_rate:qk]</rows>
+        <cols>[federated.concentration_by_grade_6f2efb4c].[sum:funded_amount:qk]</cols>
+      </table>
+      <simple-id uuid='{659C60BE-6174-43D3-9FCD-08DA242457F9}' />
+    </worksheet>
+    <worksheet name='Risk Segmentation Exposure'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#1b365d' fontname='Tableau Medium' fontsize='12'>Exposure by Risk Segment</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Risk Segmentation' name='federated.risk_segmentation_d773a8ce' />
+          </datasources>
+          <datasource-dependencies datasource='federated.risk_segmentation_d773a8ce'>
+            <column caption='Exposure' datatype='real' name='[exposure]' role='measure' type='quantitative' />
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+            <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+            <column-instance column='[exposure]' derivation='Sum' name='[sum:exposure:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='font-size' value='9' />
+            <format attr='color' value='#5B6B7C' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.risk_segmentation_d773a8ce].[sum:exposure:qk]' value='$#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#5B6B7C' />
+            <format attr='font-family' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='mark'>
+            <format attr='mark-color' value='#2F5D8A' />
+            <format attr='mark-labels-cull' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='11' />
+            <format attr='font-family' value='Tableau Book' />
+            <format attr='color' value='#1C2430' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.risk_segmentation_d773a8ce].[none:segment:nk]</rows>
+        <cols>[federated.risk_segmentation_d773a8ce].[sum:exposure:qk]</cols>
+      </table>
+      <simple-id uuid='{1CB9FEAD-15DA-4F9A-867C-0109A0309147}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='4 Expected Loss and Concentration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#1b365d' fontname='Tableau Medium' fontsize='16'>Expected Loss and Concentration</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='wrap' value='on' />
+          <format attr='font-family' value='Tableau Book' />
+        </style-rule>
+      </style>
+      <size maxheight='1020' maxwidth='1600' minheight='1020' minwidth='1600' />
+      <zones>
+        <zone h='100000' id='1' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='12' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+            <zone h='3627' id='13' type-v2='title' w='100000' x='0' y='0'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='96373' id='10' type-v2='layout-basic' w='100000' x='0' y='3627'>
+              <zone h='5193' id='2' type-v2='text' w='100000' x='0' y='3627'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='16'>Credit Risk &amp; Loan Default Analysis  ·  Expected Loss and Concentration</run>
+                  <run fontcolor='#d7dee8' fontname='Tableau Book' fontsize='11'>
+Where PD, exposure and expected loss concentrate — and where to focus first</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='0' />
+                  <format attr='padding' value='14' />
+                  <format attr='background-color' value='#1b365d' />
+                </zone-style>
+              </zone>
+              <zone h='10387' id='3' type-v2='text' w='100000' x='0' y='9590'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#1b365d' fontname='Tableau Medium' fontsize='10'>KEY INSIGHT</run>
+                  <run fontcolor='#1c2430' fontname='Tableau Book' fontsize='11'>  Grade C contributes the largest expected-loss dollars ($608M base case).</run>
+                  <run bold='true' fontcolor='#1b365d' fontname='Tableau Medium' fontsize='9'>&#10;EVIDENCE</run>
+                  <run fontcolor='#1c2430' fontname='Tableau Book' fontsize='11'>  Grade D expected loss is 15.2% of exposure; debt consolidation dominates purpose-level EL.</run>
+                  <run bold='true' fontcolor='#1b365d' fontname='Tableau Medium' fontsize='9'>&#10;BUSINESS MEANING</run>
+                  <run fontcolor='#1c2430' fontname='Tableau Book' fontsize='11'>  PD × exposure × expected loss should drive management focus.</run>
+                  <run bold='true' fontcolor='#1b365d' fontname='Tableau Medium' fontsize='9'>&#10;RECOMMENDED ACTION</run>
+                  <run fontcolor='#1c2430' fontname='Tableau Book' fontsize='11'>  Set an expected-loss appetite for high-dollar segments.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-color-left' value='#2f5d8a' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-style-left' value='solid' />
+                  <format attr='border-width' value='0' />
+                  <format attr='border-width-left' value='4' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='12' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='22697' id='4' name='Expected Loss by Grade' w='49617' x='0' y='21132'>
+                <zone-style>
+                  <format attr='border-color' value='#d4dce6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='8' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='22697' id='5' name='Expected Loss by State' w='49618' x='50382' y='21132'>
+                <zone-style>
+                  <format attr='border-color' value='#d4dce6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='8' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='22698' id='6' name='Expected Loss by Vintage' w='49617' x='0' y='44984'>
+                <zone-style>
+                  <format attr='border-color' value='#d4dce6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='8' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='22698' id='7' name='PD Exposure Matrix' w='49618' x='50382' y='44984'>
+                <zone-style>
+                  <format attr='border-color' value='#d4dce6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='8' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='28854' id='8' name='Risk Segmentation Exposure' w='100000' x='0' y='68836'>
+                <zone-style>
+                  <format attr='border-color' value='#d4dce6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='8' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='1732' id='9' type-v2='text' w='100000' x='0' y='98268'>
+                <formatted-text>
+                  <run fontcolor='#5b6b7c' fontname='Tableau Book' fontsize='9'>Lending Club accepted loans, 2007–2018  ·  Matured outcomes  ·  Base-case LGD 50%  ·  Public Kaggle extract</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='0' />
+                  <format attr='padding' value='2' />
+                  <format attr='background-color' value='#e8edf3' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#e8edf3' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Desktop' />
+      </devicelayouts>
+      <simple-id uuid='{A7D0CCDB-C8E9-4F97-B848-95E3410F6910}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='48'>
+    <window class='dashboard' maximized='true' name='4 Expected Loss and Concentration'>
+      <viewpoints>
+        <viewpoint name='Expected Loss by Grade'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Expected Loss by State'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Expected Loss by Vintage'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='PD Exposure Matrix'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Risk Segmentation Exposure'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview selected='Desktop' />
+      <simple-id uuid='{55C20352-196D-48C0-9A59-C2ABF174583D}' />
+    </window>
+    <window class='worksheet' name='Expected Loss by Grade'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B10983A1-230D-4897-AFF2-68F52F666470}' />
+    </window>
+    <window class='worksheet' name='Expected Loss by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F1A86DFB-085F-4628-A4DA-436E93EAEBBF}' />
+    </window>
+    <window class='worksheet' name='Expected Loss by Vintage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{677E325B-C000-48F7-86F3-665AA711CBA2}' />
+    </window>
+    <window class='worksheet' name='PD Exposure Matrix'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0EEFD940-A60F-4789-B5E8-2DBF28F1DA0C}' />
+    </window>
+    <window class='worksheet' name='Risk Segmentation Exposure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DA077363-416A-4A13-9A30-496B59A33561}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='4 Expected Loss and Concentration' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
